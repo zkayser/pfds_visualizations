@@ -1,0 +1,5 @@
+<section class="row">
+  <svg class="tree-container" style="width: 100vw; height: 100vh;" viewBox="0 0 100 100">
+    <%= visualize(@rb_tree) %>
+  </div>
+</svg>

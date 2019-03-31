@@ -1,0 +1,46 @@
+/* This file is for your main application css. */
+
+@import "./phoenix.css";
+
+.tree-container {
+  display: flex;
+  justify-content: center;
+}
+
+.left-tree {
+  transform: translate(-2em, 2em)
+}
+
+.right-tree {
+  transform: translate(2em, 2em)
+}
+
+.level {
+  display: flex;
+}
+
+.black-node {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border-color: black;
+  background-color: black;
+  color: white;
+}
+
+.red-node {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border-color: red;
+  background-color: red;
+  color: white;
+}
+
+.element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
