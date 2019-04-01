@@ -1,5 +1,7 @@
-<section class="row">
+<section class="row data-structure-container">
+  <h1 class="data-structure-title"><u>Red Black Trees</u></h1>
   <svg class="tree-container" style="width: 100vw; height: 100vh;" viewBox="0 0 100 100">
-    <%= visualize(@rb_tree) %>
+    <% IO.inspect(@rb_tree, pretty: true) %>
+    <%= visualize(@rb_tree, 0, RedBlackTree.depth(@rb_tree)) %>
   </div>
 </svg>

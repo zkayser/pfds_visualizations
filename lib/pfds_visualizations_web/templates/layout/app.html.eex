@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <section class="container">
+      <section class="container nav-container">
         <nav role="navigation">
         </nav>
           <h1>Purely Functional Data Structures in Elixir</h1>

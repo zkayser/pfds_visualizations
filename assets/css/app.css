@@ -44,3 +44,13 @@
   width: 100%;
   height: 100%;
 }
+
+.nav-container {
+  justify-content: center;
+}
+
+.data-structure-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

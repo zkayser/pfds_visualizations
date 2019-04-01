@@ -7,6 +7,13 @@ defmodule PfdsVisualizationsWeb.PageController do
     |> RedBlackTree.insert(25)
     |> RedBlackTree.insert(50)
     |> RedBlackTree.insert(15)
+    |> RedBlackTree.insert(12)
+    |> RedBlackTree.insert(2)
+    |> RedBlackTree.insert(40)
+    |> RedBlackTree.insert(100)
+    |> RedBlackTree.insert(27)
+    |> RedBlackTree.insert(9)
+    |> RedBlackTree.insert(54)
     render(conn, "index.html", rb_tree: rb_tree)
   end
 end
