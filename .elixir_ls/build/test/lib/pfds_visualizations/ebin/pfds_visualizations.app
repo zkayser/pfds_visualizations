@@ -20,7 +20,8 @@
                         'Elixir.PfdsVisualizationsWeb.PageView',
                         'Elixir.PfdsVisualizationsWeb.Router',
                         'Elixir.PfdsVisualizationsWeb.Router.Helpers',
-                        'Elixir.PfdsVisualizationsWeb.UserSocket']},
+                        'Elixir.PfdsVisualizationsWeb.UserSocket',
+                        'Elixir.Visualizations']},
               {registered,[]},
               {vsn,"0.1.0"},
               {mod,{'Elixir.PfdsVisualizations.Application',[]}}]}.
