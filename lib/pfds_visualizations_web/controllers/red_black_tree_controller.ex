@@ -4,9 +4,8 @@ defmodule PfdsVisualizationsWeb.RedBlackTreeController do
 
   def index(conn, _params) do
     rb_tree =
-      Enum.reduce(1..5, RedBlackTree.empty(), fn x, tree ->
-        RedBlackTree.insert(tree, x)
-      end)
+      RedBlackTree.empty()
+      |> RedBlackTree.insert(500)
 
     LiveView.Controller.live_render(conn, PfdsVisualizationsWeb.TreeView,
       session: %{

@@ -18,6 +18,7 @@ defmodule PfdsVisualizationsWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/red_black_trees", RedBlackTreeController, :index
   end
 
   # Other scopes may use custom stacks.
