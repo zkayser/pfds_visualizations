@@ -57,6 +57,24 @@ body {
   justify-content: center;
 }
 
+.nav-back {
+    position: absolute;
+    left: 10px;
+    background: initial;
+    border: initial;
+    color: #0069d9;
+    font-size: 24px;
+}
+
+.nav-forward {
+    position: absolute;
+    right: 10px;
+    background: initial;
+    border: initial;
+    color: #0069d9;
+    font-size: 24px;
+}
+
 .row.data-structure-container {
   height: 100%;
   width: 100%;
