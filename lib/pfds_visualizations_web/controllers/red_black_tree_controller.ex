@@ -7,7 +7,7 @@ defmodule PfdsVisualizationsWeb.RedBlackTreeController do
       RedBlackTree.empty()
       |> RedBlackTree.insert(500)
 
-    LiveView.Controller.live_render(conn, PfdsVisualizationsWeb.TreeView,
+    LiveView.Controller.live_render(conn, PfdsVisualizationsWeb.RedBlackTreeLiveView,
       session: %{
         rb_tree: rb_tree,
         grid: PfdsVisualizationsWeb.RedBlackTreeView.make_grid(rb_tree)

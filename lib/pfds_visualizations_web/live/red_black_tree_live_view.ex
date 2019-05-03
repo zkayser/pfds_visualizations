@@ -1,4 +1,4 @@
-defmodule PfdsVisualizationsWeb.TreeView do
+defmodule PfdsVisualizationsWeb.RedBlackTreeLiveView do
   use Phoenix.LiveView
   @update_interval 1500
 

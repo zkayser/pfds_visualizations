@@ -2,12 +2,18 @@ defmodule PfdsVisualizationsWeb.Navigation do
   alias PfdsVisualizationsWeb.Router.Helpers
   alias PfdsVisualizationsWeb.Endpoint
 
-  @slides %{
-    "/" => %{next: Helpers.red_black_tree_path(Endpoint, :index)},
-    "/red_black_trees" => %{prev: Helpers.page_path(Endpoint, :index)}
-  }
-
   def links_for(current_path) do
-    @slides[current_path]
+    slides = %{
+      "/" => %{next: Helpers.slide_path(Endpoint, :show, "1")},
+      "/slides/1" => %{prev: Helpers.red_black_tree_path(Endpoint, :index, %{})}
+    }
+
+    slides[current_path]
+  end
+
+  def sanitize_path(path) do
+    ~r/(?<pure_path>.*)?/
+    |> Regex.named_captures(path)
+    |> Map.get("pure_path")
   end
 end
