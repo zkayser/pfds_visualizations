@@ -18,11 +18,15 @@ import "phoenix_html"
 import LiveSocket from "phoenix_live_view";
 import hljs from 'highlight.js/lib/highlight';
 import elixir from 'highlight.js/lib/languages/elixir';
-import '../css/dracula.css';
+import "../css/dracula.css";
 
 
 let liveSocket = new LiveSocket("/live");
 liveSocket.connect();
 
-hljs.initHighlightingOnLoad();
 hljs.registerLanguage('elixir', elixir);
+hljs.initHighlightingOnLoad();
+
+liveSocket.socket.conn.onopen = () => {
+  console.log('opened socket');
+}
