@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <% alias PfdsVisualizationsWeb.Navigation %>
+  <% IO.puts "STATIC PATH: #{Routes.static_url(@conn, "/images/border.svg")} "%>
   <% sanitized_path = Navigation.sanitize_path(Phoenix.Controller.current_path(@conn, %{})) %>
   <% links = Navigation.links_for(sanitized_path) %>
   <head>

@@ -1,1 +1,3 @@
-<div>Here is a thing</div>
+<div class="slide-container">Here is a thing
+  <p>You are on slide: <%= @id %></p>
+</div>
