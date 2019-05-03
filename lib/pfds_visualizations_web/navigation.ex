@@ -5,7 +5,13 @@ defmodule PfdsVisualizationsWeb.Navigation do
   def links_for(current_path) do
     slides = %{
       "/" => %{next: Helpers.slide_path(Endpoint, :show, "1")},
-      "/slides/1" => %{prev: Helpers.red_black_tree_path(Endpoint, :index, %{})}
+      "/slides/1" => %{
+        prev: Helpers.red_black_tree_path(Endpoint, :index, %{}),
+        next: Helpers.slide_path(Endpoint, :show, "2")
+      },
+      "/slides/2" => %{
+        prev: Helpers.slide_path(Endpoint, :show, "1")
+      }
     }
 
     slides[current_path]

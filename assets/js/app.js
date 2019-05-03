@@ -16,6 +16,13 @@ import "phoenix_html"
 // Local files can be imported directly using relative paths, for example:
 // import socket from "./socket"
 import LiveSocket from "phoenix_live_view";
+import hljs from 'highlight.js/lib/highlight';
+import elixir from 'highlight.js/lib/languages/elixir';
+import '../css/dracula.css';
+
 
 let liveSocket = new LiveSocket("/live");
 liveSocket.connect();
+
+hljs.initHighlightingOnLoad();
+hljs.registerLanguage('elixir', elixir);

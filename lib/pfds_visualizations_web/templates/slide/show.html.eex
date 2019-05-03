@@ -1,3 +1,5 @@
-<div class="slide-container">Here is a thing
-  <p>You are on slide: <%= @id %></p>
+<div class="slide-container">
+  <div class="slide-content">
+    <%= render(PfdsVisualizationsWeb.SlideView, PfdsVisualizationsWeb.SlideView.slide_for(@id), id: @id) %>
+  </div>
 </div>
