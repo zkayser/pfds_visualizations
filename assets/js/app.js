@@ -15,17 +15,15 @@ import "phoenix_html"
 //
 // Local files can be imported directly using relative paths, for example:
 // import socket from "./socket"
+import { Socket } from 'phoenix';
 import LiveSocket from "phoenix_live_view";
 import hljs from 'highlight.js/lib/highlight';
 import elixir from 'highlight.js/lib/languages/elixir';
 import "../css/dracula.css";
 
-
-let liveSocket = new LiveSocket("/live");
-liveSocket.connect();
-console.log('socket connection: ', liveSocket.socket.conn);
-hljs.registerLanguage('elixir', elixir);
-hljs.initHighlightingOnLoad();
+let socket = new Socket("/socket", {});
+socket.connect();
+let channel = socket.channel("listeners:lobby", {});
 
 const highlightBlocks = () => {
   document.querySelectorAll('code').forEach((block) => {
@@ -34,5 +32,16 @@ const highlightBlocks = () => {
   });
 }
 
-liveSocket.socket.conn.onopen = highlightBlocks;
-liveSocket.socket.conn.onmessage = highlightBlocks;
+channel.join()
+  .receive("ok", resp => { console.log("Joined successfully", resp) })
+  .receive("error", resp => { console.log("Unable to join", resp) })
+channel.on("refresh_highlighting", (payload) => {
+  console.log('refreshing highlighting');
+  highlightBlocks();
+});
+
+
+let liveSocket = new LiveSocket("/live");
+liveSocket.connect();
+hljs.registerLanguage('elixir', elixir);
+hljs.initHighlightingOnLoad();

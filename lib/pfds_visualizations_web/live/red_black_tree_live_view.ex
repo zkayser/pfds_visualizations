@@ -76,7 +76,7 @@ defmodule PfdsVisualizationsWeb.RedBlackTreeLiveView do
 
     socket =
       socket
-      |> assign(:timer, :erlang.send_after(3000, self(), :insert_next))
+      |> assign(:timer, :erlang.send_after(@update_interval, self(), :insert_next))
       |> assign(:values, values)
       |> assign(:rb_tree, tree)
       |> assign(:grid, grid)

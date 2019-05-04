@@ -2,6 +2,7 @@ defmodule PfdsVisualizationsWeb.UserSocket do
   use Phoenix.Socket
 
   ## Channels
+  channel "listeners:*", PfdsVisualizationsWeb.ListenersChannel
   # channel "room:*", PfdsVisualizationsWeb.RoomChannel
 
   # Socket params are passed from the client and can
