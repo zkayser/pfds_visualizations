@@ -1,5 +1,5 @@
 <h1>A Little Refresher</h1>
-<pre>
+<pre style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_code, @revealed) %>">
   <code class="elixir">
     Stacks    Binary Search Trees     And     Of      I
     Queues    Balanced Binary Trees   A       Other   Have

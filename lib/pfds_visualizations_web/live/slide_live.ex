@@ -8,15 +8,37 @@ defmodule PfdsVisualizationsWeb.SlideLive do
 
   def mount(session, socket) do
     :erlang.send_after(10, self(), :refresh_highlighting)
-    {:ok, assign(socket, id: session.id)}
+
+    socket =
+      socket
+      |> assign(:id, session.id)
+      |> assign(:reveals, PfdsVisualizationsWeb.SlideView.reveals_for(session.id))
+      |> assign(:revealed, [])
+
+    {:ok, socket}
   end
 
-  def handle_event("live_slide_click", _value, socket) do
+  def handle_event(
+        "live_slide_click",
+        _value,
+        %{assigns: %{id: id, reveals: [next | rest], revealed: revealed}} = socket
+      ) do
+    socket =
+      socket
+      |> assign(:reveals, rest)
+      |> assign(:revealed, [next | revealed])
+
+    :erlang.send_after(10, self(), :refresh_highlighting)
+    {:noreply, socket}
+  end
+
+  def handle_event("live_slide_click", _value, %{assigns: %{reveals: []}} = socket) do
     {:noreply, socket}
   end
 
   def handle_event(event, value, socket) do
     IO.puts("Received unexpected event: #{inspect(event)}")
+    IO.puts("With socket value: #{inspect(socket)}")
     {:noreply, socket}
   end
 

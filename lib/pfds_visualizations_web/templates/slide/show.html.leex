@@ -1,3 +1,5 @@
 <div class="slide-content" phx-click="live_slide_click">
-    <%= render(PfdsVisualizationsWeb.SlideView, PfdsVisualizationsWeb.SlideView.slide_for(@id), id: @id) %>
+    <%= render(PfdsVisualizationsWeb.SlideView, PfdsVisualizationsWeb.SlideView.slide_for(@id), id: @id,
+        revealed: @revealed
+    ) %>
 </div>
