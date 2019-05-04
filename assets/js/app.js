@@ -23,10 +23,16 @@ import "../css/dracula.css";
 
 let liveSocket = new LiveSocket("/live");
 liveSocket.connect();
-
+console.log('socket connection: ', liveSocket.socket.conn);
 hljs.registerLanguage('elixir', elixir);
 hljs.initHighlightingOnLoad();
 
-liveSocket.socket.conn.onopen = () => {
-  console.log('opened socket');
+const highlightBlocks = () => {
+  document.querySelectorAll('code').forEach((block) => {
+    console.log(`Highlighting a block`);
+    hljs.highlightBlock(block);
+  });
 }
+
+liveSocket.socket.conn.onopen = highlightBlocks;
+liveSocket.socket.conn.onmessage = highlightBlocks;
