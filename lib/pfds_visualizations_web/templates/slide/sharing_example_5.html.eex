@@ -1,0 +1,45 @@
+<h1>Another Example With Lists</h1>
+<svg  style="width: 75%; overflow: visible;"
+      height="200"
+      version="1.1"
+      viewBox="0 0 100 100"
+      xmlns="http://www.w3.org/2000/svg">
+
+  <text text-anchor="middle" font-size="1em" x="-140" y="60" fill="red">english</text>
+  <g>
+    <rect x="-100" y="50" width="30" height="10" stroke="black" fill="transparent" stroke-width="1"/>
+    <text text-anchor="middle" font-size="0.5em" x="-85" y="58" fill="black">One</text>
+  </g>
+  <g>
+    <rect x="-65" y="50" width="30" height="10" stroke="black" fill="transparent" stroke-width="1"/>
+    <text text-anchor="middle" font-size="0.5em" x="-50" y="58" fill="black">Two</text>
+  </g>
+  <g>
+    <rect x="-30" y="50" width="30" height="10" stroke="black" fill="transparent" stroke-width="1"/>
+    <text text-anchor="middle" font-size="0.5em" x="-15" y="58" fill="black">Three</text>
+  </g>
+  <g>
+    <rect x="5" y="50" width="30" height="10" stroke="black" fill="transparent" stroke-width="1"/>
+    <text text-anchor="middle" font-size="0.5em" x="20" y="58" fill="black">Four</text>
+  </g>
+  <g>
+    <rect x="40" y="50" width="30" height="10" stroke="black" fill="transparent" stroke-width="1"/>
+    <text text-anchor="middle" font-size="0.5em" x="55" y="58" fill="black">Five</text>
+  </g>
+  <g style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_1, @revealed) %>;">
+    <text text-anchor="middle" font-size="1em" x="-140" y="20" fill="red">nihonglish</text>
+    <g>
+      <rect x="-100" y="10" width="30" height="10" stroke="black" fill="transparent" stroke-width="1"/>
+      <text text-anchor="middle" font-size="0.5em" x="-85" y="18" fill="black">One</text>
+    </g>
+    <g>
+      <rect x="-65" y="10" width="30" height="10" stroke="black" fill="transparent" stroke-width="1"/>
+      <text text-anchor="middle" font-size="0.5em" x="-50" y="18" fill="black">Two</text>
+    </g>
+    <g>
+      <rect x="-30" y="10" width="30" height="10" stroke="black" fill="transparent" stroke-width="1"/>
+      <text text-anchor="middle" font-size="0.5em" x="-15" y="18" fill="black">三</text>
+    </g>
+    <path d="M 0 20 L 5 50 l -5 -5 l 5 5 l 5 -5" fill="transparent" stroke-width="1" stroke="black" />
+  </g>
+</svg>

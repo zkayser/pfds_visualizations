@@ -1,5 +1,5 @@
 <h1>An Example With Lists</h1>
-<svg  style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_1, @revealed) %>; width: 75%; overflow: visible;"
+<svg  style="width: 75%; overflow: visible;"
       height="200"
       version="1.1"
       viewBox="0 0 100 100"
@@ -36,7 +36,7 @@
     <text text-anchor="middle" font-size="0.5em" x="135" y="18">Softshell</text>
   </g>
 
-  <% result_visibility = PfdsVisualizationsWeb.SlideView.show(:reveal_3, @revealed) %>
+  <% result_visibility = PfdsVisualizationsWeb.SlideView.show(:reveal_2, @revealed) %>
   <g style="visibility: <%= result_visibility %>;">
     <text text-anchor="middle" font-size="1em" x="-150" y="50" fill="red">ninja_turtles</text>
       <g>
@@ -57,7 +57,7 @@
   </g>
 </svg>
 
-<pre style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_2, @revealed) %>;">
+<pre style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_1, @revealed) %>;">
   <code class="elixir">
     # So now what happens if we want to concat these two lists together?
     ninja_turtles = artists ++ tortoises

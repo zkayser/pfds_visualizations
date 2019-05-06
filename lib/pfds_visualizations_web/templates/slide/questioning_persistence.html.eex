@@ -2,6 +2,6 @@
 <p style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_1, @revealed) %>">
   It can be.
 </p>
-<p style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_1, @revealed) %>">
+<p style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_2, @revealed) %>">
   But we can get around it in functional languages with <strong><i>sharing</i></strong>.
 </p>

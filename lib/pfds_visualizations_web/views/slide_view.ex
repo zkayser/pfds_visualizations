@@ -13,6 +13,7 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "7" -> "sharing_example_2.html"
       "8" -> "sharing_example_3.html"
       "9" -> "sharing_example_4.html"
+      "10" -> "sharing_example_5.html"
       # "3" -> "refresher.html"
       _ -> "intro.html"
     end
@@ -23,12 +24,13 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "1" -> App.IntroView.reveals()
       "2" -> [:reveal_1, :reveal_2]
       "3" -> [:reveal_1, :reveal_2]
-      "4" -> [:reveal_1]
+      "4" -> [:reveal_1, :reveal_2]
       "5" -> [:reveal_1, :reveal_2, :reveal_3, :reveal_4]
       "6" -> [:reveal_1]
-      "7" -> [:reveal_1, :reveal_2, :reveal_3]
+      "7" -> [:reveal_1, :reveal_2]
       "8" -> [:reveal_1, :reveal_2]
       "9" -> []
+      "10" -> [:reveal_1]
       # "3" -> App.RefresherView.reveals()
       _ -> []
     end
