@@ -14,6 +14,8 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "8" -> "sharing_example_3.html"
       "9" -> "sharing_example_4.html"
       "10" -> "sharing_example_5.html"
+      "11" -> "complex_sharing.html"
+      "12" -> "binary_tree_sharing.html"
       # "3" -> "refresher.html"
       _ -> "intro.html"
     end
@@ -31,6 +33,8 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "8" -> [:reveal_1, :reveal_2]
       "9" -> []
       "10" -> [:reveal_1]
+      "11" -> [:reveal_1]
+      "12" -> [:reveal_1]
       # "3" -> App.RefresherView.reveals()
       _ -> []
     end

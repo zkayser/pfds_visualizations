@@ -1,0 +1,42 @@
+<h1>An Example With Binary Search Trees</h1>
+<svg  style="width: 75%; overflow: visible;"
+      height="200"
+      version="1.1"
+      viewBox="0 0 100 100"
+      xmlns="http://www.w3.org/2000/svg">
+
+    <g>
+      <circle fill="black" stroke="black" cx="-100" cy="10" r="8" />
+      <text text-anchor="middle" font-size="0.5em" x="-100" y="12" fill="white">d</text>
+      <path d="M -100 18 L -140 50" stroke="black"/>
+      <path d="M -100 18 L -40 50" stroke="black"/>
+    </g>
+    <g>
+      <circle fill="black" stroke="black" cx="-140" cy="50" r="8" />
+      <text text-anchor="middle" font-size="0.5em" x="-140" y="52" fill="white">b</text>
+      <path d="M -140 58 L -180 90" stroke="black"/>
+      <path d="M -140 58 L -100 90" stroke="black"/>
+    </g>
+    <g>
+      <circle fill="black" stroke="black" cx="-40" cy="50" r="8" />
+      <text text-anchor="middle" font-size="0.5em" x="-40" y="52" fill="white">g</text>
+      <path d="M -40 58 L -80 90" stroke="black"/>
+      <path d="M -40 58 L 0 90" stroke="black"/>
+    </g>
+    <g>
+      <circle fill="black" stroke="black" cx="-180" cy="90" r="8" />
+      <text text-anchor="middle" font-size="0.5em" x="-180" y="92" fill="white">a</text>
+    </g>
+    <g>
+      <circle fill="black" stroke="black" cx="-100" cy="90" r="8" />
+      <text text-anchor="middle" font-size="0.5em" x="-100" y="92" fill="white">c</text>
+    </g>
+    <g>
+      <circle fill="black" stroke="black" cx="-80" cy="90" r="8" />
+      <text text-anchor="middle" font-size="0.5em" x="-80" y="92" fill="white">f</text>
+    </g>
+    <g>
+      <circle fill="black" stroke="black" cx="0" cy="90" r="8" />
+      <text text-anchor="middle" font-size="0.5em" x="0" y="92" fill="white">h</text>
+    </g>
+</svg>

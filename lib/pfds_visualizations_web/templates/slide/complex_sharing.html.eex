@@ -1,0 +1,4 @@
+<h1>More Complex Sharing</h1>
+<p style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_1, @revealed) %>;">
+  Sharing with tree-like structures
+</p>
