@@ -16,6 +16,7 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "10" -> "sharing_example_5.html"
       "11" -> "complex_sharing.html"
       "12" -> "binary_tree_sharing.html"
+      "13" -> "lazy_vs_strict.html"
       # "3" -> "refresher.html"
       _ -> "intro.html"
     end

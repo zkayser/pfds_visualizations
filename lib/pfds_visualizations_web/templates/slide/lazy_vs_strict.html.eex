@@ -1,0 +1,17 @@
+<h1>Lazy Vs. Strict Evaluation</h1>
+<h4>The Spectrum</h4>
+<svg  style="width: 75%; overflow: visible;"
+      height="200"
+      version="1.1"
+      viewBox="0 0 100 100"
+      xmlns="http://www.w3.org/2000/svg">
+
+  <line stroke="black" stroke-width="3" x1="-151" y1="10" x2="251" y2="10" />
+  <path d="M -150 10 L -144 4 M -150 10 L -144 16" fill="white" stroke="black" stroke-width="3" />
+  <path d="M 250 10 L 244 4 M 250 10 L 244 16" fill="white" stroke="black" stroke-width="3" />
+  <text text-anchor="middle" font-size="1em" x="-125" y="50" fill="black">Strict</text>
+  <text text-anchor="middle" font-size="1em" x="225" y="50" fill="black">Lazy</text>
+
+  <text text-anchor="middle" font-size="0.75em" x="-75" y="90" fill="black">Elixir, Erlang</text>
+  <text text-anchor="middle" font-size="0.75em" x="225" y="90" fill="black">Haskell</text>
+</svg>
