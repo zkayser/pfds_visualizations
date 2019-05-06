@@ -1,5 +1,5 @@
 <h1>Methods Of Amortization</h1>
-<p>Introducing...</p>
+<p>Which brings us to...</p>
 <div style="width: 100; <%= render_visible(:reveal_1, @revealed) %> display: flex; justify-content: center; align-items: center; flex-direction: column;">
   <h2>The Banker's Method</h2>
   <img src="/images/money.gif">

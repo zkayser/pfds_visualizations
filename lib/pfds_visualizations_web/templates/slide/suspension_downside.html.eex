@@ -2,7 +2,7 @@
 <pre style="<%= render_visible(:reveal_1, @revealed) %>">
   <code class="elixir">
   # One downside with this approach is that we have to look for suspensions and force them everywhere we want their values:
-  def add(%Suspension{} = susp_1, %Suspension{} = susp_2) do
+  def add(%Suspension{fun: susp_1}, %Suspension{fun: susp_2}) do
     susp_1.() + susp_2.()
   end
 
