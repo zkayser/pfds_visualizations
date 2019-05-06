@@ -18,5 +18,6 @@ Imagine you have a complex, long-running function that can be called numerous ti
 With memoization, the complex computation would only be run the first time the function is called.
 </h3>
 <h3 style="<%= render_visible(:reveal_5, @revealed) %>">
-The result would then be returned from the cache for subsequent calls.
+The result would then be returned from the cache for subsequent calls, making all subsequent calls run in constant time,<br/>
+regardless of the cost of the initial call.
 </h3>

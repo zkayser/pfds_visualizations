@@ -1,0 +1,20 @@
+<h1 style="transform: translateY(-10rem);">Incremental Vs. Monolithic</h1>
+<pre style="transform: translateY(-10rem);">
+  <code class="elixir">
+  # reverse/1 and drop/2, on the other hand, are _monolithic_
+  deflazy drop(stream, n) do
+    drop_(stream, n)
+  end
+  defp drop_(stream, 0), do: stream
+  defp drop_(:empty, _), do: :empty
+  defp drop_(%Cons{tail: tail}, n), do: drop_(tail, n - 1)
+  defp drop_(stream, n) do
+    case Suspension.force(stream) do
+      :empty -> :empty
+      %Cons{tail: tail} -> drop_(tail, n - 1)
+    end
+  end
+
+  # Any recursive calls we have to `drop_/2` will NOT be delayed
+  </code>
+</pre>

@@ -70,6 +70,24 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "22" ->
         "elixir_call_by_need.html"
 
+      "23" ->
+        "suspension.html"
+
+      "24" ->
+        "suspension_downside.html"
+
+      "25" ->
+        "deflazy.html"
+
+      "26" ->
+        "deflazy_in_action.html"
+
+      "27" ->
+        "incremental_vs_monolithic.html"
+
+      "28" ->
+        "incremental_vs_monolithic_2.html"
+
       # "3" -> "refresher.html"
       _ ->
         "intro.html"
@@ -95,6 +113,9 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "20" -> [:reveal_1, :reveal_2, :reveal_3]
       "21" -> [:reveal_1, :reveal_2, :reveal_3, :reveal_4, :reveal_5]
       "22" -> [:reveal_1, :reveal_2, :reveal_3, :reveal_4]
+      "24" -> [:reveal_1]
+      "25" -> [:reveal_1]
+      "27" -> [:reveal_1, :reveal_2]
       # "3" -> App.RefresherView.reveals()
       _ -> []
     end

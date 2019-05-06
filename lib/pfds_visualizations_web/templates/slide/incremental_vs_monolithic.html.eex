@@ -1,0 +1,19 @@
+<h1>Incremental Vs. Monolithic</h1>
+<p>The LazyStream module gives us lazy functions with two different characteristics:</p>
+<h2 style="<%= render_visible(:reveal_1, @revealed) %>">
+  append/2 AND take/2 are <i>incremental</i><br/>
+  They do enough to create a single outer cell and delay the rest of the work (by putting it in a suspension)
+</h2>
+<pre style="<%= render_visible(:reveal_2, @revealed) %>">
+  <code class="elixir">
+  deflazy append(stream_1, stream_2) do
+    case stream_1 do
+      :empty ->
+        stream_2
+
+      %Cons{head: head, tail: tail} ->
+        %Cons{head: head, tail: append(stream_2, tail)}
+    end
+  end
+  </code>
+</pre>

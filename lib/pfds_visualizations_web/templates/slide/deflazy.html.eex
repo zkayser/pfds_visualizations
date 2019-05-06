@@ -1,0 +1,21 @@
+<h1 style="transform: translateY(-10rem)">Introducing The Deflazy Macro</h1>
+<pre style="<%= render_visible(:reveal_1, @revealed) %> transform: translateY(-10rem)">
+  <code class="elixir">
+  # The `deflazy` macro does two things:
+  # 1) It will take both Suspension args and primitive value args, forcing the suspensions inside the function body if needed
+  # 2) It will immediately return another Suspension (it will not evaluate any of the function body until
+  #     the resulting suspension is forced).
+  deflazy add(a, b) do
+    a + b
+  end
+
+  lazy_add_with_suspensions = add(%Suspension.create(1), %Suspension.create(2))
+  # => %Suspension{fun: ...}
+  lazy_add_with_primitives = add(1, 2)
+  # => %Suspension{fun: ...}
+  Suspension.force(lazy_add_with_suspensions)
+  # => 3
+  Suspension.force(lazy_add_with_primitives)
+  # => 3
+  </code>
+</pre>

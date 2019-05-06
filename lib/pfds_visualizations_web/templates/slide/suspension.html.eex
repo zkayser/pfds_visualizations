@@ -1,0 +1,20 @@
+<pre>
+  <code class="elixir">
+  defmodule Suspension do
+    defstruct [:fun]
+
+    def create(mod, func, args) do
+      %Suspension{
+        fun: fn ->
+          # Looks up result in a cache. If it can't find the result of applying the function in the cache,
+          # it runs apply(mod, func, args), stores the result in the cache, and returns the result.
+          Memoize.get(mod, fun, args)
+        end
+      }
+    end
+
+    def force(%Suspension{fun: fun}), do: fun.()
+    def force(val), do: val
+  end
+  </code>
+</pre>

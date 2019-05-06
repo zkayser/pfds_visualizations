@@ -1,0 +1,12 @@
+<h1>Deflazy In Action</h1>
+<pre>
+  <code class="elixir">
+  # Introducing the Api for the LazyStream module:
+  deflazy append(stream_1, stream_2) # * Incremental
+  deflazy take(stream, number_of_elems) # * Incremental
+  deflazy drop(stream, number_of_elems) # * Monolithic
+  deflazy reverse(stream) # * Monolithic
+  deflazy to_list(stream) # * Monolithic
+  def from_list(list)
+  </code>
+</pre>
