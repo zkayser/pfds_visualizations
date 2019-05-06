@@ -1,8 +1,13 @@
-<h1>Sharing</h1>
+<h1><i>Sharing</i> Is Caring</h1>
 <p style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_1, @revealed) %>">
-  We copy all affected nodes in a data structure, and then make all changes in the copy.
+  Sharing follows a simple formula:
 </p>
 <p style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_2, @revealed) %>">
-  Since we are never modifying any nodes in the original structure directly, we can <br/>
-  <i>share</i> all nodes that are unaffected by an update between the new version and the old version.
+  1) Copy <i>only</i> the affected nodes in a data structure
+</p>
+<p style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_3, @revealed) %>">
+  2) Make all changes in the copy
+</p>
+<p style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_4, @revealed) %>">
+  3) <strong><i>Share</i></strong> all nodes unaffected by updates between the new version and the old.
 </p>

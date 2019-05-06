@@ -19,12 +19,12 @@ defmodule PfdsVisualizationsWeb.SlideView do
   def reveals_for(id) do
     case id do
       "1" -> App.IntroView.reveals()
-      "2" -> App.DefinitionView.reveals()
+      "2" -> [:reveal_1, :reveal_2]
       "3" -> [:reveal_1, :reveal_2]
       "4" -> [:reveal_1]
-      "5" -> [:reveal_1, :reveal_2]
+      "5" -> [:reveal_1, :reveal_2, :reveal_3, :reveal_4]
       "6" -> [:reveal_1]
-      "7" -> [:reveal_1, :reveal_2]
+      "7" -> [:reveal_1, :reveal_2, :reveal_3]
       # "3" -> App.RefresherView.reveals()
       _ -> []
     end

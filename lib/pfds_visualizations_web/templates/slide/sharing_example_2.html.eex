@@ -10,7 +10,6 @@
     <text text-anchor="middle" font-size="0.5em" x="-85" y="18">Leo</text>
     <path d="M -70 10 A 1 1 0 0 1 -45 9 L -48 6 L -45 9 L -42 6" fill="white" stroke="black"/>
   </g>
-  </g>
   <g>
     <rect x="-65" y="10" width="30" height="10" stroke="black" fill="transparent" stroke-width="1"/>
     <text text-anchor="middle" font-size="0.5em" x="-50" y="18">Raphie</text>
@@ -35,6 +34,26 @@
   <g>
     <rect x="120" y="10" width="30" height="10" stroke="black" fill="transparent" stroke-width="1"/>
     <text text-anchor="middle" font-size="0.5em" x="135" y="18">Softshell</text>
+  </g>
+
+  <% result_visibility = PfdsVisualizationsWeb.SlideView.show(:reveal_3, @revealed) %>
+  <g style="visibility: <%= result_visibility %>;">
+    <text text-anchor="middle" font-size="1em" x="-150" y="50" fill="red">ninja_turtles</text>
+      <g>
+        <rect x="-100" y="50" width="30" height="10" stroke="black" fill="transparent" stroke-width="1"/>
+        <text text-anchor="middle" font-size="0.5em" x="-85" y="58">Leo</text>
+        <path d="M -70 50 A 1 1 0 0 1 -45 49 L -48 46 L -45 49 L -42 46" fill="white" stroke="black"/>
+      </g>
+      <g>
+        <rect x="-65" y="50" width="30" height="10" stroke="black" fill="transparent" stroke-width="1"/>
+        <text text-anchor="middle" font-size="0.5em" x="-50" y="58">Raphie</text>
+        <path d="M -35 50 A 1 1 0 0 1 -15 49 L -18 46 L -15 49 L -12 46" fill="white" stroke="black"/>
+      </g>
+      <g>
+        <rect x="-30" y="50" width="30" height="10" stroke="black" fill="transparent" stroke-width="1"/>
+        <text text-anchor="middle" font-size="0.5em" x="-15" y="58">Michey</text>
+        <path d="M 0 50 L 50 20 L 35 23 L 50 20 L 53 23" fill="white" stroke="black"/>
+      </g>
   </g>
 </svg>
 
