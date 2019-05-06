@@ -1,0 +1,20 @@
+<h1>Traditional Amortization</h1>
+<p style="<%= render_visible(:reveal_1, @revealed) %>">
+  In amortized analysis we have to:<br/>
+  <span style="<%= render_visible(:reveal_2, @revealed) %>">
+    1) Define the amortized cost for each operation
+  </span><br/>
+  <span style="<%= render_visible(:reveal_3, @revealed) %>">
+    2) Prove that the total amortized cost for any sequence of operations<br/>
+    is an upper bound (greater than or equal to) the total actual cost of<br/>
+    the sequence.
+  </span><br/>
+  <span style="<%= render_visible(:reveal_4, @revealed) %>">
+    * Note that this allows some operations to have actual costs that <i>exceed</i><br/>
+    their amortized costs.
+  </span><br/>
+  <span style="<%= render_visible(:reveal_5, @revealed) %>">
+    3) The difference between the accumulated amortized costs and <br/>
+    the accumulated actual costs is known as the <strong><i>accumulated savings</i></strong>
+  </span>
+</p>

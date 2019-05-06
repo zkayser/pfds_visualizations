@@ -1,0 +1,16 @@
+<h1>Adding Some Rigor To The Banker's Method</h1>
+<p>
+Let's define amortized costs under the banker's method.<br/>
+Here is an equation:<br/>
+<span style="<%= render_visible(:reveal_1, @revealed) %>">
+<strong><i>amortized = actual + credits_allocated - credits_spent</i></strong>
+</span><br/>
+<span style="<%= render_visible(:reveal_2, @revealed) %>">
+We require that every credit be allocated before it is spent,<br/>
+and we cannot spend any credit more than once.
+</span><br/>
+<span style="<%= render_visible(:reveal_3, @revealed) %>">
+Define <strong><i>credit invariants</i></strong> to regulate credit distribution</br>
+and ensure we have enough credits to pay for expensive operations
+</span>
+</p>

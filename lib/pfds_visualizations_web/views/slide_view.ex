@@ -91,6 +91,18 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "29" ->
         "amortization_fundamentals.html"
 
+      "30" ->
+        "traditional_amortization.html"
+
+      "31" ->
+        "methods_of_amortization.html"
+
+      "32" ->
+        "bankers_method.html"
+
+      "33" ->
+        "bankers_method_rigorous.html"
+
       # "3" -> "refresher.html"
       _ ->
         "intro.html"
@@ -120,6 +132,10 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "25" -> [:reveal_1]
       "27" -> [:reveal_1, :reveal_2]
       "29" -> [:reveal_1, :reveal_2, :reveal_3, :reveal_4]
+      "30" -> [:reveal_1, :reveal_2, :reveal_3, :reveal_4, :reveal_5]
+      "31" -> [:reveal_1]
+      "32" -> [:reveal_1, :reveal_2]
+      "33" -> [:reveal_1, :reveal_2, :reveal_3]
       # "3" -> App.RefresherView.reveals()
       _ -> []
     end

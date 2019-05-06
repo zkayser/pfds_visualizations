@@ -1,0 +1,12 @@
+<h1>The Banker's Method: An Overview</h1>
+<p>
+In the banker's method, we think of the accumulated savings as <br/>
+<i>credits</i> associated with individual locations in our data structures.<br/>
+<span style="<%= render_visible(:reveal_1, @revealed)%>">
+We use these credits to <i>pay for</i> accessing these locations later.
+</span><br/>
+<span style="<%= render_visible(:reveal_2, @revealed)%>">
+Intuitively, this means we design our data structures to generate<br/>
+savings early on (i.e., while building up the data structure).
+</span><br/>
+</p>
