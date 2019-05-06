@@ -88,6 +88,9 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "28" ->
         "incremental_vs_monolithic_2.html"
 
+      "29" ->
+        "amortization_fundamentals.html"
+
       # "3" -> "refresher.html"
       _ ->
         "intro.html"
@@ -116,6 +119,7 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "24" -> [:reveal_1]
       "25" -> [:reveal_1]
       "27" -> [:reveal_1, :reveal_2]
+      "29" -> [:reveal_1, :reveal_2, :reveal_3, :reveal_4]
       # "3" -> App.RefresherView.reveals()
       _ -> []
     end

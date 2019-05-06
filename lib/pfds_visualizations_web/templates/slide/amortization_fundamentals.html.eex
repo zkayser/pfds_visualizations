@@ -1,0 +1,21 @@
+<h1>Analyzing Functional Data Structures</h1>
+<h1>With Amortized Analysis</h1>
+<p>
+  <span style="<%= render_visible(:reveal_1, @revealed) %>">
+    1) Throw out concerns over the running time of any individual operation
+  </span><br/>
+  <span style="<%= render_visible(:reveal_2, @revealed) %>">
+    2) Instead, given a sequence of some number, <i>n</i>, operations,<br/>
+       we want to bound the total running time of the sequence to be O(n)
+  </span><br/>
+  <span style="<%= render_visible(:reveal_3, @revealed) %>">
+    3) This allows us to not worry as much about having <i>every</i><br/>
+       operation run in O(1) time. It may be okay if some operations run <br/>
+       in logarithmic or linear time.
+  </span><br/>
+  <span style="<%= render_visible(:reveal_4, @revealed) %>">
+    4) Benefit by opening up design space for more possible solutions that<br/>
+    may yield faster and/or simpler implementations than worst-case solutions<br/>
+    with the same bounds.
+  </span>
+</p>
