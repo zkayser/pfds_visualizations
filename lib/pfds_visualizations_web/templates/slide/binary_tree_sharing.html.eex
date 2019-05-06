@@ -1,5 +1,5 @@
 <h1>An Example With Binary Search Trees</h1>
-<svg  style="width: 75%; overflow: visible;"
+<svg  style="width: 75%; overflow: visible; transform: translateX(25rem);"
       height="200"
       version="1.1"
       viewBox="0 0 100 100"
@@ -39,4 +39,31 @@
       <circle fill="black" stroke="black" cx="0" cy="90" r="8" />
       <text text-anchor="middle" font-size="0.5em" x="0" y="92" fill="white">h</text>
     </g>
+    <g style="<%= render_visible(:reveal_2, @revealed) %>">
+      <circle fill="purple" stroke="purple" cx="-80" cy="10" r="8" />
+      <text text-anchor="middle" font-size="0.5em" x="-80" y="12" fill="white">d</text>
+      <path style="<%= render_visible(:reveal_3, @revealed) %>" d="M -80 18 L -132 50" stroke="black"/>
+      <path style="<%= render_visible(:reveal_4, @revealed) %>" d="M -80 18 L -20 50" stroke="purple"/>
+    </g>
+    <g style="<%= render_visible(:reveal_4, @revealed) %>">
+      <circle fill="purple" stroke="purple" cx="-20" cy="50" r="8" />
+      <text text-anchor="middle" font-size="0.5em" x="-20" y="52" fill="white">g</text>
+      <path style="<%= render_visible(:reveal_5, @revealed) %>" d="M -20 58 L -60 87" stroke="purple"/>
+      <path style="<%= render_visible(:reveal_6, @revealed) %>" d="M -20 58 L 0 87" stroke="black" />
+    </g>
+    <g style="<%= render_visible(:reveal_5, @revealed) %>">
+      <circle fill="purple" stroke="purple" cx="-60" cy="90" r="8" />
+      <text text-anchor="middle" font-size="0.5em" x="-60" y="92" fill="white">f</text>
+      <path style="<%= render_visible(:reveal_7, @revealed) %>" d="M -60 93 L -100 132" stroke="purple" />
+    </g>
+    <g style="<%= render_visible(:reveal_7, @revealed) %>">
+      <circle fill="purple" stroke="purple" cx="-100" cy="130" r="8" />
+      <text text-anchor="middle" font-size="0.5em" x="-100" y="132" fill="white">e</text>
+    </g>
 </svg>
+<pre style="<%= render_visible(:reveal_1, @revealed) %> transform: translateY(10rem)">
+  <code class="elixir">
+    # Assuming we have a binary search tree with an insert/2 function
+    BinaryTree.insert(binary_tree, "e")
+  </code>
+</pre>

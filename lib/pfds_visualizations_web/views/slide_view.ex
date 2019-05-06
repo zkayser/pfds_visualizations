@@ -34,7 +34,7 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "9" -> []
       "10" -> [:reveal_1]
       "11" -> [:reveal_1]
-      "12" -> [:reveal_1]
+      "12" -> [:reveal_1, :reveal_2, :reveal_3, :reveal_4, :reveal_5, :reveal_6, :reveal_7]
       # "3" -> App.RefresherView.reveals()
       _ -> []
     end
@@ -45,5 +45,9 @@ defmodule PfdsVisualizationsWeb.SlideView do
       true -> "visible"
       false -> "hidden"
     end
+  end
+
+  def render_visible(reveal, revealed) do
+    "visibility: #{show(reveal, revealed)};"
   end
 end
