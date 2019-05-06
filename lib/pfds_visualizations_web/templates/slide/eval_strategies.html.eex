@@ -1,0 +1,6 @@
+<h1>Evaluation Strategies</h1>
+<h3>Passing in functions as arguments gives us a way to use the <strong><i>"call by name"</strong></i> evaluation strategy</h3>
+<h3>This let's us defer evaluation of arguments</h3>
+<h1 style="<%= render_visible(:reveal_1, @revealed) %>">But...</h1>
+<h3 style="<%= render_visible(:reveal_2, @revealed) %>">It doesn't quite give us <strong><i>Call by need</i></strong></h3>
+<h3 style="<%= render_visible(:reveal_3, @revealed) %>">Essentially a memoized version of <strong>call by name</strong></h3>

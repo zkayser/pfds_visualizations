@@ -1,0 +1,22 @@
+<h1>What Does Memoization Do For Us?</h1>
+<h3 style="<%= render_visible(:reveal_1, @revealed) %>">
+Memoization is key when working with persistent data structures.
+</h3>
+<h3 style="<%= render_visible(:reveal_2, @revealed) %>">
+Imagine you have a complex, long-running function that can be called numerous times on the same version of a data structure.
+</h3>
+<pre style="<%= render_visible(:reveal_3, @revealed) %>">
+  <code class="elixir">
+  # Some malicious adversary could then call that function any arbitrary number of times
+  some_long_running_func(my_data_structure)
+  some_long_running_func(my_data_structure)
+  some_long_running_func(my_data_structure)
+  # etc...
+  </code>
+</pre>
+<h3 style="<%= render_visible(:reveal_4, @revealed) %>">
+With memoization, the complex computation would only be run the first time the function is called.
+</h3>
+<h3 style="<%= render_visible(:reveal_5, @revealed) %>">
+The result would then be returned from the cache for subsequent calls.
+</h3>
