@@ -1,0 +1,46 @@
+<h1>An Example With Lists</h1>
+<svg  style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_1, @revealed) %>; width: 75%; overflow: visible;"
+      height="200"
+      version="1.1"
+      viewBox="0 0 100 100"
+      xmlns="http://www.w3.org/2000/svg">
+  <text text-anchor="middle" font-size="1em" x="-120" y="8" fill="red">artists</text>
+  <g>
+    <rect x="-100" y="10" width="30" height="10" stroke="black" fill="transparent" stroke-width="1"/>
+    <text text-anchor="middle" font-size="0.5em" x="-85" y="18">Leo</text>
+    <path d="M -70 10 A 1 1 0 0 1 -45 9 L -48 6 L -45 9 L -42 6" fill="white" stroke="black"/>
+  </g>
+  </g>
+  <g>
+    <rect x="-65" y="10" width="30" height="10" stroke="black" fill="transparent" stroke-width="1"/>
+    <text text-anchor="middle" font-size="0.5em" x="-50" y="18">Raphie</text>
+    <path d="M -35 10 A 1 1 0 0 1 -15 9 L -18 6 L -15 9 L -12 6" fill="white" stroke="black"/>
+  </g>
+  <g>
+    <rect x="-30" y="10" width="30" height="10" stroke="black" fill="transparent" stroke-width="1"/>
+    <text text-anchor="middle" font-size="0.5em" x="-15" y="18">Michey</text>
+  </g>
+
+  <text text-anchor="middle" font-size="1em" x="30" y="8" fill="red">tortoises</text>
+  <g>
+    <rect x="50" y="10" width="30" height="10" stroke="black" fill="transparent" stroke-width="1"/>
+    <text text-anchor="middle" font-size="0.5em" x="65" y="18">Snapping</text>
+    <path d="M 80 10 A 1 1 0 0 1 105 9 L 102 6 L 105 9 L 108 6" fill="white" stroke="black"/>
+  </g>
+  <g>
+    <rect x="85" y="10" width="30" height="10" stroke="black" fill="transparent" stroke-width="1"/>
+    <text text-anchor="middle" font-size="0.5em" x="100" y="18">Box</text>
+    <path d="M 115 10 A 1 1 0 0 1 140 9 L 137 6 L 140 9 L 143 6" fill="white" stroke="black"/>
+  </g>
+  <g>
+    <rect x="120" y="10" width="30" height="10" stroke="black" fill="transparent" stroke-width="1"/>
+    <text text-anchor="middle" font-size="0.5em" x="135" y="18">Softshell</text>
+  </g>
+</svg>
+
+<pre style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_2, @revealed) %>;">
+  <code class="elixir">
+    # So now what happens if we want to concat these two lists together?
+    ninja_turtles = artists ++ tortoises
+  </code>
+</pre>

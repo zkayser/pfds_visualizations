@@ -1,0 +1,7 @@
+<h1>An Example With Lists</h1>
+<pre style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_1, @revealed) %>">
+  <code class="elixir">
+    artists = ["Leo", "Raphie", "Michey"]
+    tortoises = ["Snapping", "Box", "Softshell"]
+  </code>
+</pre>

@@ -1,0 +1,9 @@
+<h1>Let's Talk A Bit About Persistence</h1>
+<p style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_1, @revealed) %>">
+Persistence is pretty awesome! <br/>
+And we get it for free in Elixir (and Erlang, and other functional languages too!)
+</p>
+<p style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_2, @revealed) %>">
+Instead of destroying the current version of some data structure like we would typically do
+in imperative languages, we create a <i>new version that coexists with the old version! </i>
+</p>

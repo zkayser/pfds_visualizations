@@ -1,0 +1,5 @@
+<h1>But Isn't Copying Data Inefficient?!</h1>
+<p style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_1, @revealed) %>">
+  Copying an entire data structure directly <i>can</i> be inefficient but,<br>
+  we get around this in functional languages by using a technique known as "sharing".
+</p>

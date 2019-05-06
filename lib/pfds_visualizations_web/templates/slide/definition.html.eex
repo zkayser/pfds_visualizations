@@ -1,0 +1,10 @@
+<h1>What do we mean by "Purely Functional Data Structure"?</h1>
+<p style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_1, @revealed) %>">
+  Functional data structures are:
+</p>
+<p style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_2, @revealed) %>">
+  Immutable
+</p>
+<p style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_3, @revealed) %>">
+  Persistent
+</p>
