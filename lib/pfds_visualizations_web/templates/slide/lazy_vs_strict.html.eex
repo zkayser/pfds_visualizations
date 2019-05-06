@@ -11,7 +11,6 @@
   <path d="M 250 10 L 244 4 M 250 10 L 244 16" fill="white" stroke="black" stroke-width="3" />
   <text text-anchor="middle" font-size="1em" x="-125" y="50" fill="black">Strict</text>
   <text text-anchor="middle" font-size="1em" x="225" y="50" fill="black">Lazy</text>
-
-  <text text-anchor="middle" font-size="0.75em" x="-75" y="90" fill="black">Elixir, Erlang</text>
-  <text text-anchor="middle" font-size="0.75em" x="225" y="90" fill="black">Haskell</text>
+  <text style="<%= render_visible(:reveal_1, @revealed) %>" text-anchor="middle" font-size="0.75em" x="-75" y="90" fill="black">Elixir, Erlang</text>
+  <text style="<%= render_visible(:reveal_2, @revealed) %>" text-anchor="middle" font-size="0.75em" x="225" y="90" fill="black">Haskell</text>
 </svg>

@@ -1,0 +1,16 @@
+<h1>Strict Evaluation</h1>
+<pre>
+  <code class="elixir">
+  # Let's say we do this:
+  import MyStrictMod
+  add(func_1(), func_2())
+  # => Prints out the following:
+  # Running func_1...
+  # Running func_2...
+  # Adding two things together...
+  # => Returns 3
+  </code>
+</pre>
+
+<p style="<%= render_visible(:reveal_1, @revealed) %>">Insight: Our parameters get evaluated <i>first</i></p>
+<p style="<%= render_visible(:reveal_2, @revealed) %>">But what if those parameters aren't actually needed?</p>

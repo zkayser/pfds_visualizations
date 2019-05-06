@@ -1,0 +1,22 @@
+<pre>
+  <code class="elixir">
+    defmodule MyLazyMod do
+      def func_1 do
+        fn ->
+          IO.puts "Running func_1..."
+        end
+      end
+
+      def func_2 do
+        fn ->
+          IO.puts "Running func_2..."
+        end
+      end
+
+      def add(f1, f2) do
+        IO.puts "Adding two things together..."
+        f1.() + f2.()
+      end
+    end
+  </code>
+</pre>

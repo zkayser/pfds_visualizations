@@ -1,0 +1,15 @@
+<pre>
+  <code class="elixir">
+    # Now what do you expect will happen?
+    import MyLazyMod
+    add(func_1, func_2)
+  </code>
+</pre>
+<pre style="<%= render_visible(:reveal_1, @revealed) %>">
+  <code>
+    "Adding two things together..."
+    "Running func_1..."
+    "Running func_2"
+    3
+  </code>
+</pre>
