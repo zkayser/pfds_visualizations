@@ -1,0 +1,13 @@
+<h1>Another Example With Lists</h1>
+<p style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_1, @revealed) %>">
+  Suppose we have the following <i>update</i> function for lists:
+</p>
+<pre style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_2, @revealed) %>">
+  <code class="elixir">
+  defmodule Lists do
+    def update([], _, _), do: :error
+    def update([head|tail], 0, new_elem), do: [new_elem|tail]
+    def update([head|tail], index, new_elem), do: [head|update(tail, index - 1, new_elem)]
+  end
+  </code>
+</pre>

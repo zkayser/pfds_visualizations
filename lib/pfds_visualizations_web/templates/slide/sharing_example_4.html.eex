@@ -1,0 +1,8 @@
+<h1>Another Example With Lists</h1>
+<pre>
+  <code class="elixir">
+    english = ["one", "two", "three", "four", "five"]
+    nihonglish = Lists.update(english, 2, "三")
+    # => ["one", "two", "三", "four", "five"]
+  </code>
+</p>
