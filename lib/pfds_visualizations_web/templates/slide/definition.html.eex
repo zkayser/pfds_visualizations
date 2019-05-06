@@ -1,7 +1,13 @@
 <h1>What do we mean by "Purely Functional Data Structure"?</h1>
 <p style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_1, @revealed) %>">
   Immutable
+  <span style="<%= render_visible(:reveal_2, @revealed) %> font-size: 2.5rem; font-weight: 100; margin-left: 3rem;">
+    vs. Mutable
+  </span>
 </p>
-<p style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_2, @revealed) %>">
+<p style="visibility: <%= PfdsVisualizationsWeb.SlideView.show(:reveal_3, @revealed) %>">
   Persistent
+  <span style="<%= render_visible(:reveal_4, @revealed) %> font-size: 2.5rem; font-weight: 100; margin-left: 3rem;">
+    vs. Ephemeral
+  </span>
 </p>
