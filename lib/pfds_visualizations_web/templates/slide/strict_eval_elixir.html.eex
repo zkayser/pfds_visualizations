@@ -1,22 +1,2 @@
 <h1>Strict Evaluation</h1>
 <h4>This is the default evaluation mode in Elixir</h4>
-<pre style="<%= render_visible(:reveal_1, @revealed) %>">
-  <code class="elixir">
-  defmodule MyStrictMod do
-    def func_1() do
-      IO.puts "Running func_1..."
-      1
-    end
-
-    def func_2() do
-      IO.puts "Running func_2..."
-      2
-    end
-
-    def add(a, b) do
-      IO.puts "Adding two things together..."
-      a + b
-    end
-  end
-  </code>
-</pre>

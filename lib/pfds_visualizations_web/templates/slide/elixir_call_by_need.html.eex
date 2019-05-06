@@ -1,0 +1,13 @@
+<h1>Can We Replicate Call-By-Need Semantics In Elixir?</h1>
+<h3 style="<%= render_visible(:reveal_1, @revealed) %>">
+We can approximate call-by-need, but we need to introduce some basic constructs first:
+</h3>
+<p style="<%= render_visible(:reveal_2, @revealed) %>">
+1) Suspensions -- a struct or map that acts as a wrapper to hold a function
+</p>
+<p style="<%= render_visible(:reveal_3, @revealed) %>">
+2) A way to memoize lazy suspensions once they have been evaluated
+</p>
+<p style="<%= render_visible(:reveal_4, @revealed) %>">
+3) A way to force evaluation of Suspensions
+</p>

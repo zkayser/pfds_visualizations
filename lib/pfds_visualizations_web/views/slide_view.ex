@@ -67,6 +67,9 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "21" ->
         "why_memoization.html"
 
+      "22" ->
+        "elixir_call_by_need.html"
+
       # "3" -> "refresher.html"
       _ ->
         "intro.html"
@@ -91,6 +94,7 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "19" -> [:reveal_1]
       "20" -> [:reveal_1, :reveal_2, :reveal_3]
       "21" -> [:reveal_1, :reveal_2, :reveal_3, :reveal_4, :reveal_5]
+      "22" -> [:reveal_1, :reveal_2, :reveal_3, :reveal_4]
       # "3" -> App.RefresherView.reveals()
       _ -> []
     end
