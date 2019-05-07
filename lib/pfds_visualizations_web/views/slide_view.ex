@@ -136,6 +136,15 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "44" ->
         "bankers_method_revisited_2.html"
 
+      "45" ->
+        "bankers_queue_api.html"
+
+      "46" ->
+        "when_to_rotate.html"
+
+      "47" ->
+        "the_debit_invariant.html"
+
       # "3" -> "refresher.html"
       _ ->
         "intro.html"
@@ -179,6 +188,9 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "42" -> [:reveal_1, :reveal_2, :reveal_3, :reveal_4, :reveal_5]
       "43" -> [:reveal_1, :reveal_2, :reveal_3]
       "44" -> [:reveal_1, :reveal_2, :reveal_3]
+      "45" -> [:reveal_1]
+      "46" -> [:reveal_1, :reveal_2, :reveal_3, :reveal_4]
+      "47" -> [:reveal_1, :reveal_2, :reveal_3, :reveal_4, :reveal_5]
       # "3" -> App.RefresherView.reveals()
       _ -> []
     end

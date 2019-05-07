@@ -20,6 +20,7 @@ defmodule PfdsVisualizationsWeb.Router do
     get "/", RedBlackTreeController, :index
     get "/slides/:id", SlideController, :show
     get "/batched_queue", BatchedQueueController, :index
+    get "/bankers_queue", BankersQueueController, :index
   end
 
   # Other scopes may use custom stacks.

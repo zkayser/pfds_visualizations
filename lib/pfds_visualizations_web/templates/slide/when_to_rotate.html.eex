@@ -1,0 +1,14 @@
+<h1>When To Rotate?</h1>
+<p style="<%= render_visible(:reveal_1, @revealed) %>">
+Consideration #1 => reverse/1 on our LazyStream is <i>monolithic</i>
+</p>
+<p style="<%= render_visible(:reveal_2, @revealed) %>">
+We need to set up the execution of reverse/1 far enough in advance so that we have discharged all of its debits by the time we need the result
+</p>
+<p style="<%= render_visible(:reveal_3, @revealed) %>">
+Maintain the following invariant:<br/>
+length(front_stream) >= length(rear_stream)
+</p>
+<p style="<%= render_visible(:reveal_4, @revealed) %>">
+This means we rotate the queue whenever length(rear_stream) exceeds length(front_stream)
+</p>

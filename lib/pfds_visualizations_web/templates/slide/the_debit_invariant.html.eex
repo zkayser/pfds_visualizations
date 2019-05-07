@@ -1,0 +1,17 @@
+<h1>Setting Up A Debit Invariant</h1>
+<p style="<%= render_visible(:reveal_1, @revealed) %>">
+Let's say debit(i) is the number of debits on the <i>i</i>th node of the front stream.
+</p>
+<p style="<%= render_visible(:reveal_2, @revealed) %>">
+Define DEBIT(i) be the sum of the number of debits on all nodes up to and including the <i>i</i>th node.
+</p>
+<p style="<%= render_visible(:reveal_3, @revealed) %>">
+We maintain the following <strong><i>debit invariant</i></strong>:<br/>
+<strong><i>DEBIT(i) <= min(2i, length(front_stream) - length(rear_stream))</i></strong>
+</p>
+<p style="<%= render_visible(:reveal_4, @revealed) %>">
+The 2i term guarantees that all debits on the first node of the front stream have been discharged (can be freely executed via, eg. head/1 or tail/2)
+</p>
+<p style="<%= render_visible(:reveal_5, @revealed) %>">
+The length(front) - length(rear) term guarantees that all debits in the entire queue have been discharged whenever the streams are of equal length (ie. just before a rotation)
+</p>

@@ -1,0 +1,22 @@
+<h1 style="transform: translateY(-14rem);">Introducing The BankersQueue</h1>
+<pre style="transform: translateY(-15rem);">
+  <code class="elixir">
+  # BatchedQueue
+  @typedoc """
+  We now use suspended lazy streams to represent the front and rear lists
+  and add length_front and length_rear fields to explicitly track the length of both
+  """
+  @type queue(a) :: %{front: LazyStream.t(a), length_front: non_neg_integer, rear: LazyStream.t(a), length_rear: non_neg_integer}
+
+  def empty
+  def empty?(queue)
+  def head(queue)
+  def tail(queue)
+  def snoc(queue, new_element)
+  </code>
+</pre>
+<p style="<%= render_visible(:reveal_1, @revealed) %> transform: translateY(-15rem);">
+Now we cannot wait for the front stream to become empty to reverse the rear stream<br/>
+Instead, we periodically rotate the queue by moving all elements of the rear stream<br/>
+to the end of the front stream (front = append(front, reverse(rear))) (rear = empty)
+</p>
