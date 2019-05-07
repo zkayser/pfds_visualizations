@@ -103,6 +103,15 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "33" ->
         "bankers_method_rigorous.html"
 
+      "34" ->
+        "batched_queue_api.html"
+
+      "35" ->
+        "batched_queue_invariants.html"
+
+      "36" ->
+        "batched_queue_operations.html"
+
       # "3" -> "refresher.html"
       _ ->
         "intro.html"
@@ -136,6 +145,8 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "31" -> [:reveal_1]
       "32" -> [:reveal_1, :reveal_2]
       "33" -> [:reveal_1, :reveal_2, :reveal_3]
+      "35" -> [:reveal_1, :reveal_2, :reveal_3]
+      "36" -> [:reveal_1, :reveal_2, :reveal_3]
       # "3" -> App.RefresherView.reveals()
       _ -> []
     end

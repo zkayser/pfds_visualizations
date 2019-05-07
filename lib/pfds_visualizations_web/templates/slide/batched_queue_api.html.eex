@@ -1,0 +1,23 @@
+<h1 style="transform: translateY(-14rem);">An Example With Batched Queues</h1>
+<pre style="transform: translateY(-15rem);">
+  <code class="elixir">
+  # BatchedQueue
+  @typedoc """
+  Represents a queue -- We keep two lists, a `front`
+  and a `rear`. We only add things on to the rear of the queue
+  and remove things from the `front` of the queue.
+  """
+  @type queue(a) :: {list(a), list(a)}
+
+  def empty
+  def empty?(queue)
+  def head(queue)
+  def tail(queue)
+  def snoc(queue, new_element)
+  # Yep, `snoc` is a weird name that doesn't really mean anything
+  # But, it is the word `cons` backward.
+  # Some may recognize this as being roughly equivalent to
+  # Elixir's | in [head|tail] (appending a thing on to the head of a list).
+  # With `snoc`, we are appending a thing to the rear of a queue.
+  </code>
+</pre>

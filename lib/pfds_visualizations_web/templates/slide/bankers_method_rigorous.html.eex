@@ -1,7 +1,7 @@
 <h1>Adding Some Rigor To The Banker's Method</h1>
 <p>
 Let's define amortized costs under the banker's method.<br/>
-Here is an equation:<br/>
+Here is the equation for how we do it:<br/>
 <span style="<%= render_visible(:reveal_1, @revealed) %>">
 <strong><i>amortized = actual + credits_allocated - credits_spent</i></strong>
 </span><br/>

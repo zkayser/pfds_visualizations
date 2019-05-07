@@ -1,0 +1,19 @@
+<h1>An Example With Batched Queues</h1>
+<p style="<%= render_visible(:reveal_1, @revealed) %>">
+Two main queries that give us new versions of a queue:<br/>
+<span style="<%= render_visible(:reveal_2, @revealed) %>">
+1) snoc/2 ==> Adds a new element to the queue<br/>
+Amortized cost:<br/>
+<strong><i>amortized = actual_cost + credits_allocated - credits_spent</i></strong><br/>
+<strong><i>2 = 1 + 1 - 0</i></strong>
+</span><br/>
+<span style="<%= render_visible(:reveal_3, @revealed) %>">
+2) tail/1 ==> Removes the first element from the queue<br/>
+Amortized cost:<br/>
+<strong><i>amortized = actual_cost + credits_allocated - credits_spent</i></strong><br/>
+*When tail/1 <i>does not</i> reverse the rear list:<br/>
+<strong><i>1 = 1 + 0 - 0</i></strong><br/>
+*Otherwise:<br/>
+<strong><i>1 = (1 + length(rear)) + 0 - length(rear)</i></strong><br/>
+</span><br/>
+</p>

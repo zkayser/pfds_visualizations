@@ -1,0 +1,10 @@
+<h1>Invariants</h1>
+<p style="<%= render_visible(:reveal_1, @revealed) %>">
+1) `front` can only be empty if `rear` is also empty
+</p>
+<p style="<%= render_visible(:reveal_2, @revealed) %>">
+<strong><i>Credit Invariant</i></strong>:<br/>
+<span style="<%= render_visible(:reveal_3, @revealed) %>">
+2) Every element in the `rear` list is associated with a single credit
+</span>
+</p>
