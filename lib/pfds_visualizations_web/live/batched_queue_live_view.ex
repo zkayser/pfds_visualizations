@@ -26,8 +26,6 @@ defmodule PfdsVisualizationsWeb.BatchedQueueLiveView do
   end
 
   def handle_event("new_elem_change", value, socket) do
-    Logger.debug("Hi from new_elem_change")
-
     socket =
       socket
       |> assign(:new_elem, value["new_elem"])
