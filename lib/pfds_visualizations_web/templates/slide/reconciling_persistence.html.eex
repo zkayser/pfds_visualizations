@@ -1,0 +1,13 @@
+<h1>Reconciling Persistence And Amortization</h1>
+<p style="<%= render_visible(:reveal_1, @revealed) %>">
+Lazy evaluation <i>with</i> memoization holds the key to reconciling persistence with amortized analysis.
+</p>
+<p style="<%= render_visible(:reveal_2, @revealed) %>">
+Find a way to guarantee that if the first application of a function to some structure is expensive,<br/>
+subsequent applications of that same function <i>will not</i> be.<br/>
+* (Without side effects) This is impossible with strict evaluation and/or lazy evaluation without memoization
+</p>
+<p style="<%= render_visible(:reveal_3, @revealed) %>">
+1) Defer expensive computations until they are needed<br/>
+2) Subsequent calls with the same persistent version are memoized
+</p>

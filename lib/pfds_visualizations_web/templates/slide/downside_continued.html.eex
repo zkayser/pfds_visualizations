@@ -1,0 +1,7 @@
+<h1>The Bad News Continued</h1>
+<p style="<%= render_visible(:reveal_1, @revealed) %>">
+We spend all of the credits we were allocated on the first call to tail/1.
+</p>
+<div style="<%= render_visible(:reveal_2, @revealed) %> display: flex; flex-direction: column; justify-content: center; align-items: center;">
+<img src="/images/bankruptcy.gif">
+</div>

@@ -1,0 +1,18 @@
+<h1>Building A Framework For Persistent Amortized Analysis</h1>
+<p>Replace the idea of "credits" with "debits"<br/>
+When we create a suspension to perform work later, we are creating a debt we must payoff later.
+</p>
+<p style="<%= render_visible(:reveal_1, @revealed) %>">
+Time for some definitions:
+</p>
+<p style="<%= render_visible(:reveal_2, @revealed) %>">
+<strong><i>Unshared Cost</i></strong>: The actual time it would take to execute an operation under the assumption
+that every suspension in the system at the beginning of the operation has already been forced and memoized
+</p>
+<p style="<%= render_visible(:reveal_3, @revealed) %>">
+<strong><i>Shared Cost</i></strong>: The time it would take to execute every suspension <i>created but not evaluated</i>
+by an operation
+</p>
+<p style="<%= render_visible(:reveal_4, @revealed) %>">
+<strong><i>Complete Cost</i></strong>: The sum of shared plus unshared costs (i.e. the actual cost of the operation if we were using strict evaluation)
+</p>

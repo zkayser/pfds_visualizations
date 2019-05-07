@@ -1,0 +1,18 @@
+<h1>The Bad News</h1>
+<p style="<%= render_visible(:reveal_1, @revealed) %>">
+In this analysis, we assume that our data structures are used ephemerally.
+</p>
+<p style="<%= render_visible(:reveal_2, @revealed) %>">
+This breaks down when we use data structures persistently.
+</p>
+<pre style="<%= render_visible(:reveal_3, @revealed) %>">
+  <code class="elixir">
+  # Suppose we are in Elixir using the BatchedQueue structure just introduced.
+  # We have this queue: {[1], [2, 3, 4, 5, 6]}
+  # What happens to our analysis if we do the following:
+  BatchedQueue.tail(queue)
+  BatchedQueue.tail(queue)
+  BatchedQueue.tail(queue)
+  BatchedQueue.tail(queue)
+  </code>
+</pre>

@@ -112,6 +112,18 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "36" ->
         "batched_queue_operations.html"
 
+      "37" ->
+        "traditional_analysis_downside.html"
+
+      "38" ->
+        "downside_continued.html"
+
+      "39" ->
+        "reconciling_persistence.html"
+
+      "40" ->
+        "persistent_amortized_analysis.html"
+
       # "3" -> "refresher.html"
       _ ->
         "intro.html"
@@ -147,6 +159,10 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "33" -> [:reveal_1, :reveal_2, :reveal_3]
       "35" -> [:reveal_1, :reveal_2, :reveal_3]
       "36" -> [:reveal_1, :reveal_2, :reveal_3]
+      "37" -> [:reveal_1, :reveal_2, :reveal_3]
+      "38" -> [:reveal_1, :reveal_2]
+      "39" -> [:reveal_1, :reveal_2, :reveal_3]
+      "40" -> [:reveal_1, :reveal_2, :reveal_3, :reveal_4]
       # "3" -> App.RefresherView.reveals()
       _ -> []
     end

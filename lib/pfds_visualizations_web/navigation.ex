@@ -150,7 +150,23 @@ defmodule PfdsVisualizationsWeb.Navigation do
         next: Helpers.batched_queue_path(Endpoint, :index)
       },
       "/batched_queue" => %{
-        prev: Helpers.slide_path(Endpoint, :show, 36)
+        prev: Helpers.slide_path(Endpoint, :show, "36"),
+        next: Helpers.slide_path(Endpoint, :show, "37")
+      },
+      "/slides/37" => %{
+        prev: Helpers.batched_queue_path(Endpoint, :index),
+        next: Helpers.slide_path(Endpoint, :show, "38")
+      },
+      "/slides/38" => %{
+        prev: Helpers.slide_path(Endpoint, :show, "37"),
+        next: Helpers.slide_path(Endpoint, :show, "39")
+      },
+      "/slides/39" => %{
+        prev: Helpers.slide_path(Endpoint, :show, "38"),
+        next: Helpers.slide_path(Endpoint, :show, "40")
+      },
+      "/slides/40" => %{
+        prev: Helpers.slide_path(Endpoint, :show, "39")
       }
     }
 
