@@ -124,6 +124,12 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "40" ->
         "persistent_amortized_analysis.html"
 
+      "41" ->
+        "shared_cost_breakdown.html"
+
+      "42" ->
+        "persistent_amortized_cost.html"
+
       # "3" -> "refresher.html"
       _ ->
         "intro.html"
@@ -163,6 +169,8 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "38" -> [:reveal_1, :reveal_2]
       "39" -> [:reveal_1, :reveal_2, :reveal_3]
       "40" -> [:reveal_1, :reveal_2, :reveal_3, :reveal_4]
+      "41" -> [:reveal_1, :reveal_2]
+      "42" -> [:reveal_1, :reveal_2, :reveal_3, :reveal_4, :reveal_5]
       # "3" -> App.RefresherView.reveals()
       _ -> []
     end

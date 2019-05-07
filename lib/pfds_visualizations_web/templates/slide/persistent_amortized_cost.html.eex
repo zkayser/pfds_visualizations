@@ -1,0 +1,16 @@
+<h1>Amortized Costs With Persistence</h1>
+<p style="<%= render_visible(:reveal_1, @revealed) %>">
+<strong><i>Total Actual Cost:</i></strong> The sum of the <i>realized</i> shared costs and unshared costs of an operation
+</p>
+<p style="<%= render_visible(:reveal_2, @revealed) %>">
+The actual cost is <i>at least</i> the unshared cost and <i>at most</i> the complete cost of an operation
+</p>
+<p style="<%= render_visible(:reveal_3, @revealed) %>">
+<strong><i>Accumulated Debt: </i></strong> Starts at 0 and increases everytime we create a suspension by the shared cost of the suspension. Each operation then pays off a portion of the accumulated debt.
+</p>
+<p style="<%= render_visible(:reveal_4, @revealed) %>">
+<strong><i>Amortized Cost: </i></strong> The unshared cost + the amount of debt paid off by an operation
+</p>
+<p style="<%= render_visible(:reveal_5, @revealed) %>">
+RULE: We cannot force a suspension until we have entirely paid off the debt associated with that suspension.
+</p>

@@ -1,0 +1,7 @@
+<h1>Breaking Down Shared Costs</h1>
+<p style="<%= render_visible(:reveal_1, @revealed) %>">
+<strong><i>Realized Costs:</i></strong> Shared costs that <i>are</i> executed during a sequence of operations
+</p>
+<p style="<%= render_visible(:reveal_2, @revealed) %>">
+<strong><i>Unrealized Costs:</i></strong> Shared costs for suspensions that are <i>never</i> executed
+</p>
