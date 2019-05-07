@@ -1,0 +1,20 @@
+<h1>More Resources</h1>
+<p style="<%= render_visible(:reveal_1, @revealed) %>">
+1) Purely Functional Data Structures by Chris Okasaki<br/>
+<img src="/images/pfds_cover.jpg" style="width: 10rem; height: 10rem;">
+</p>
+<p style="<%= render_visible(:reveal_2, @revealed) %>">
+2) Purely Functional Data Structures, the White Paper by Chris Okasaki
+<a href="https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf" />https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf</a>
+</p>
+<p style="<%= render_visible(:reveal_3, @revealed) %>">
+3) Data Structures and Amortized Complexity in a Functional Setting, Berry Schoenmakers
+</p>
+<p style="<%= render_visible(:reveal_4, @revealed) %>">
+My implementations of purely functional data structures in Elixir on Github
+<a href="https://github.com/zkayser/pfds_elixir">https://github.com/zkayser/pfds_elixir</a>
+</p>
+<p style="<%= render_visible(:reveal_5, @revealed) %>">
+These slides (all done in LiveView!)
+<a href="https://github.com/zkayser/pfds_visualizations">https://github.com/zkayser/pfds_visualizations</a>
+</p>

@@ -145,6 +145,9 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "47" ->
         "the_debit_invariant.html"
 
+      "48" ->
+        "more_resources.html"
+
       # "3" -> "refresher.html"
       _ ->
         "intro.html"
@@ -191,6 +194,7 @@ defmodule PfdsVisualizationsWeb.SlideView do
       "45" -> [:reveal_1]
       "46" -> [:reveal_1, :reveal_2, :reveal_3, :reveal_4]
       "47" -> [:reveal_1, :reveal_2, :reveal_3, :reveal_4, :reveal_5]
+      "48" -> [:reveal_1, :reveal_2, :reveal_3, :reveal_4, :reveal_5]
       # "3" -> App.RefresherView.reveals()
       _ -> []
     end

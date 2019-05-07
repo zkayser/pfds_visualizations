@@ -198,7 +198,11 @@ defmodule PfdsVisualizationsWeb.Navigation do
         next: Helpers.bankers_queue_path(Endpoint, :index)
       },
       "/bankers_queue" => %{
-        prev: Helpers.slide_path(Endpoint, :show, "47")
+        prev: Helpers.slide_path(Endpoint, :show, "47"),
+        next: Helpers.slide_path(Endpoint, :show, "48")
+      },
+      "/slides/48" => %{
+        prev: Helpers.bankers_queue_path(Endpoint, :index)
       }
     }
 
