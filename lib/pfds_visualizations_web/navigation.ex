@@ -174,7 +174,15 @@ defmodule PfdsVisualizationsWeb.Navigation do
         next: Helpers.slide_path(Endpoint, :show, "42")
       },
       "/slides/42" => %{
-        prev: Helpers.slide_path(Endpoint, :show, "41")
+        prev: Helpers.slide_path(Endpoint, :show, "41"),
+        next: Helpers.slide_path(Endpoint, :show, "43")
+      },
+      "/slides/43" => %{
+        prev: Helpers.slide_path(Endpoint, :show, "42"),
+        next: Helpers.slide_path(Endpoint, :show, "44")
+      },
+      "/slides/44" => %{
+        prev: Helpers.slide_path(Endpoint, :show, "43")
       }
     }
 

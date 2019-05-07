@@ -1,0 +1,13 @@
+<h1>Banker's Method V2</h1>
+<p>Replace the idea of credits with <i>debits</i></p>
+<p style="<%= render_visible(:reveal_1, @revealed) %>">
+Each debit represents a constant amount of suspended work
+</p>
+<p style="<%= render_visible(:reveal_2, @revealed) %>">
+When we create a suspension, we create a number of debits proportional to its shared cost and associate each debit with a location in the data structure
+</p>
+<p style="<%= render_visible(:reveal_3, @revealed) %>">
+Some general rules of thumb:<br/>
+Debits for <i>monolithic</i> functions are usually assigned to the root of the result<br/>
+Debits for <i>incremental</i> functions are distributed among the roots of the partial results
+</p>

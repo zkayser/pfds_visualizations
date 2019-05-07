@@ -1,0 +1,12 @@
+<h1>Banker's Method Revisited</h1>
+<p style="<%= render_visible(:reveal_1, @revealed) %>">
+The total amortized cost is the total unshared cost plus the total number of debits discharged:<br/>
+<strong><i>amortized = unshared + discharged</i></strong>
+</p>
+<p style="<%= render_visible(:reveal_2, @revealed) %>">
+The total actual cost is the total unshared cost plus the realized shared cost:<br/>
+<strong><i>actual = unshared + realized</i></strong>
+</p>
+<p style="<%= render_visible(:reveal_3, @revealed) %>">
+Our job: Show that the actual cost is always <i>less than or equal</i> to the amortized cost
+</p>
