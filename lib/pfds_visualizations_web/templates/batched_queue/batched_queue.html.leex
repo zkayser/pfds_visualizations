@@ -1,0 +1,23 @@
+<div class="slide-content" style="transform: translateY(-2rem);">
+  <h1>Simple Batched Queues</h1>
+  <button type="button" phx-click="toggle_operation" style="transform: translateX(-20rem);">
+    Toggle (<%= @current_operation %>)
+  </button>
+  <%= if @current_operation == :snoc do %>
+  <form phx-submit="add_new_elem" phx-change="new_elem_change">
+    <input  value="<%= @new_elem %>"
+            name="new_elem"
+            phx-change="new_elem_change"
+            style="width: 250px; height: 30px; margin: 2rem; margin-right: 25rem; border: 1px solid black"/>
+    <button>Add <%= @new_elem %></button>
+  </form>
+  <% end %>
+
+  <svg  style="width: 75%; overflow: visible; border: 10px solid black;"
+      height="500"
+      version="1.1"
+      viewBox="0 0 100 100"
+      xmlns="http://www.w3.org/2000/svg">
+    "<%= render_queue(@queue) %>"
+  </svg>
+</div>
