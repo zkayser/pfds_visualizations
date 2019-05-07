@@ -12,6 +12,11 @@
     <button>Add <%= @new_elem %></button>
   </form>
   <% end %>
+  <%= if @current_operation == :tail do %>
+  <button type="button" phx-click="run_tail" style="transform: translateY(-4.75rem);">
+    Run Tail
+  </button>
+  <% end %>
 
   <svg  style="width: 75%; overflow: visible; border: 10px solid black;"
       height="500"
@@ -20,4 +25,8 @@
       xmlns="http://www.w3.org/2000/svg">
     "<%= render_queue(@queue) %>"
   </svg>
+  <p>Total Amortized Cost: <%= @total_amortized_cost %> = Total Actual Cost: <%= @total_actual_cost %>
+     + Total Credits Allocated: <%= @total_credits_allocated %> - Total Credits Spent: <%= @total_credits_spent %>
+  </p>
+  <p>Total Accumulated Savings: <%= @total_savings %></p>
 </div>
