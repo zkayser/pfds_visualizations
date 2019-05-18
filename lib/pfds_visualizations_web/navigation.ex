@@ -163,7 +163,7 @@ defmodule PfdsVisualizationsWeb.Navigation do
       },
       "/slides/39" => %{
         prev: Helpers.slide_path(Endpoint, :show, "38"),
-        next: Helpers.slide_path(Endpoint, :show, "40")
+        next: Helpers.slide_path(Endpoint, :show, "48")
       },
       "/slides/40" => %{
         prev: Helpers.slide_path(Endpoint, :show, "39"),
@@ -202,7 +202,7 @@ defmodule PfdsVisualizationsWeb.Navigation do
         next: Helpers.slide_path(Endpoint, :show, "48")
       },
       "/slides/48" => %{
-        prev: Helpers.bankers_queue_path(Endpoint, :index)
+        prev: Helpers.slide_path(Endpoint, :show, "39")
       }
     }
 

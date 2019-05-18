@@ -226,3 +226,7 @@ code {
 .hljs-emphasis {
   font-style: italic;
 }
+
+.hljs-comment {
+  color: yellow;
+}

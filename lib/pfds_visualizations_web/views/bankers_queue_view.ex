@@ -51,7 +51,7 @@ defmodule PfdsVisualizationsWeb.BankersQueueView do
   defp to_list(stream) do
     case Suspension.force(stream) do
       :empty -> []
-      %{head: head, tail: tail} -> to_list_(tail, [head])
+      %{head: head, tail: tail} -> to_list_(tail, [head]) |> :lists.reverse()
     end
   end
 

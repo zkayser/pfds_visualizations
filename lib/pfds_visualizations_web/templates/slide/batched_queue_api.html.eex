@@ -14,10 +14,8 @@
   def head(queue)
   def tail(queue)
   def snoc(queue, new_element)
-  # Yep, `snoc` is a weird name that doesn't really mean anything
-  # But, it is the word `cons` backward.
-  # Some may recognize this as being roughly equivalent to
-  # Elixir's | in [head|tail] (appending a thing on to the head of a list).
-  # With `snoc`, we are appending a thing to the rear of a queue.
+  # Yep, `snoc` is a weird name :)
+  # It could be called `add` because it
+  # adds an element to the queue
   </code>
 </pre>
